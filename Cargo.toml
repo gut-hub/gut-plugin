@@ -1,0 +1,18 @@
+[package]
+name = "gut-plugin"
+version = "0.1.0"
+authors = ["Jared De La Cruz <jared@jareddlc.com>"]
+description = "Helper library that provides a macro to create plugins for Gut"
+repository = "https://github.com/gut-hub/gut-plugin"
+categories = ["command-line-interface"]
+readme = "README.md"
+license = "MIT"
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1"
+syn = { version = "1", features = ["full"]}
+serde_json = "1"
